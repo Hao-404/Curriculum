@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended: true}))
 var mysqlConnection = mysql.createConnection({
     host: 'curricular-db.cwlp4i7l59rt.ap-southeast-2.rds.amazonaws.com',
     user: 'admin',
-    password: '12345678', //请与上一步在数据库设置的密码相同
+    password: '12345678', 
     port: '3306'
 });
 
