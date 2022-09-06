@@ -10,10 +10,11 @@ const getRelationship = async function(req, res) {
     const mysql2 = require('mysql2/promise');
 
     const connection = await mysql2.createConnection({
-        host: 'database-2.cwlp4i7l59rt.ap-southeast-2.rds.amazonaws.com',
+        host: 'curricular-db.cwlp4i7l59rt.ap-southeast-2.rds.amazonaws.com',
         user: 'admin',
-        password: '12345678', //请与上一步在数据库设置的密码相同
-        database: 'adelaide'
+        password: '12345678', 
+        port: '3306',
+        database: "adelaide"
     });
 
     /* Taken by yuhao: find the course*/
