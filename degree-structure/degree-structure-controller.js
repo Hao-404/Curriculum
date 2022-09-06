@@ -30,7 +30,8 @@ async function getStructure(degreeName) {
         host: 'curricular-db.cwlp4i7l59rt.ap-southeast-2.rds.amazonaws.com',
         user: 'admin',
         password: '12345678', 
-        port: '3306'
+        port: '3306',
+        database: "adelaide"
     });
 
     // list = [ {}, {}, ... ]
